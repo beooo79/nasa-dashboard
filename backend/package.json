@@ -2,7 +2,7 @@
   "name": "nasa-dashboard",
   "version": "1.0.0",
   "description": "NASA Dashboard",
-  "main": "app.js",
+  "main": "apod.js",
   "dependencies": {
     "open": "^8.1.0"
   },
