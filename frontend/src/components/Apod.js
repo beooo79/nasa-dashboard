@@ -8,7 +8,9 @@ export const Apod = () => {
       const response = await fetch("http://localhost:8080/apod");
       console.log(response);
       const data = await response.json();
-      setData(data);
+      if (data.media_type === "image") {
+        setData(data);
+      }
     };
     fetchApod();
   }, []);
@@ -17,14 +19,13 @@ export const Apod = () => {
     <div className="Apod">
       <header className="App-header">
         <h3>Random Astronomy Picture of the Day</h3>
-        <div>
-          <p className="App-text">{data.date}</p>
-          <p className="App-text">{data.title}</p>
-        </div>
+        <p className="App-text" float="left">
+          {data.date}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.title}
+        </p>
         <a href={data.hdurl}>
-          <img src={data.url} alt="APoD" height="300px" width="auto" />
+          <img src={data.url} alt="APoD" height="auto" />
         </a>
-        <p className="App-text">{data.explanation}</p>
+        <p className="App-textmini">{data.explanation}</p>
       </header>
     </div>
   );

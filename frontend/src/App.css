@@ -25,6 +25,35 @@
 }
 
 .App-text {
-  font-size: calc(5px + 1vmin);
+  font-size: calc(8px + 1vmin);
   color: #d8f4fb;
+}
+
+.App-textmini {
+  font-size: calc(3px + 1vmin);
+  color: #d8f4fb;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid #282c34;
+}
+
+.vertical-center {
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+p {
+  max-width: 500px;
+}
+
+img {
+  max-height: min-content;
+  max-width: 500px;
 }
