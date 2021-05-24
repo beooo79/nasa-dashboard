@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Apod } from "./components/Apod";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>NASA Dashboard</h1>
+        <p>by beoo79</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Thanks to the{" "}
+          <a className="App-link" href="api.nasa.gov">
+            NASA open API site
+          </a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Apod />
       </header>
     </div>
   );
