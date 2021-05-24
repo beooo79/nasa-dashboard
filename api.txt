@@ -1,0 +1,10 @@
+Your API key for beoo79@gmail.com is:
+
+8jvqiN7K1YbEgDhXLccMWCYrxYrxrEwcUiRgcimk
+You can start using this key to make web service requests. Simply pass your key in the URL when making a web request. Here's an example:
+
+https://api.nasa.gov/planetary/apod?api_key=8jvqiN7K1YbEgDhXLccMWCYrxYrxrEwcUiRgcimk
+For additional support, please contact us. When contacting us, please tell us what API you're accessing and provide the following account details so we can quickly find you:
+
+Account Email: beoo79@gmail.com
+Account ID: 5be0912e-c83c-4dbb-828a-7c4558bbb8a0
