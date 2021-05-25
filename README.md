@@ -1,3 +1,3 @@
-nasa-dashboard
+# NASA Dashboard
 
-Node.js backend and \*.js frontend to view some goodies from the NASA open API at https://api.nasa.gov/
+> Node.js backend and \*.js frontend to view some goodies from the NASA open API at https://api.nasa.gov/
