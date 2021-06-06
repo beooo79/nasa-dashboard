@@ -25,7 +25,7 @@ function App() {
               src="https://avatars.githubusercontent.com/u/53890208?v=4"
               alt="beoo79"
             />
-            &nbsp;&nbsp;&nbsp; Thanks to the
+            &nbsp;&nbsp;&nbsp; Thanks to the &nbsp;
             <a className="App-link" href="api.nasa.gov">
               NASA open API site
             </a>
