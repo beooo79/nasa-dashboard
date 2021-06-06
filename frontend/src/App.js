@@ -8,14 +8,16 @@ function App() {
       <header className="App">
         <h1>NASA Dashboard</h1>
         <table>
-          <tr>
-            <td>
-              <Search />
-            </td>
-            <td>
-              <Apod />
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>
+                <Search />
+              </td>
+              <td>
+                <Apod />
+              </td>
+            </tr>
+          </tbody>
         </table>
       </header>
     </div>
