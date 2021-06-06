@@ -5,14 +5,13 @@ export const Apod = () => {
   const [resourceApod, setResourceApod] = useState(new Date());
 
   useEffect(() => {
-    const fetchApod = async () => {
-      const response = await fetch("http://localhost:8080/apod");
-      const data = await response.json();
-      if (data.media_type === "image") {
-        setData(data);
-      }
-    };
-    fetchApod();
+    fetch("http://localhost:8080/apod")
+      .then((response) => response.json())
+      .then((json) => {
+        if (json.media_type === "image") {
+          setData(json);
+        }
+      });
   }, [resourceApod]);
 
   return (
