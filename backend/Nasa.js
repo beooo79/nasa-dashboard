@@ -21,6 +21,19 @@ app.get("/apod", (req, res) => {
   );
 });
 
+app.get("/search", (req, res) => {
+  let options = {
+    hostname: "images-api.nasa.gov",
+    port: 443,
+    path: "/search?q=" + req.query.query,
+    method: "GET",
+  };
+  httpRequest(options, null).then(
+    (data) => res.send(data),
+    (err) => res.status(404).send(`no data retrieved: ${err}`)
+  );
+});
+
 function httpRequest(params, postData) {
   return new Promise(function (resolve, reject) {
     var req = https.request(params, function (res) {

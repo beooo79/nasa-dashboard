@@ -6,7 +6,6 @@ export const Apod = () => {
   useEffect(() => {
     const fetchApod = async () => {
       const response = await fetch("http://localhost:8080/apod");
-      console.log(response);
       const data = await response.json();
       if (data.media_type === "image") {
         setData(data);
@@ -16,7 +15,7 @@ export const Apod = () => {
   }, []);
 
   return (
-    <div className="Apod">
+    <div className="App">
       <header className="App-header">
         <h3>Random Astronomy Picture of the Day</h3>
         <p className="App-text" float="left">
