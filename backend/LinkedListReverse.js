@@ -25,16 +25,14 @@ let list = {
 function reverse(list) {
     let cur = list;
     let prev = null;
-
     while (cur != null) {
         let next = cur.next;
         cur.next = prev;
         prev = cur;
         cur = next;
     }
-
     return prev;
 }
-console.log(JSON.stringify(list, null, 2));
+console.log("original list", JSON.stringify(list, null, 2));
 
-console.log(JSON.stringify(reverse(list), null, 2));
+console.log("the reversed list", JSON.stringify(reverse(list), null, 2));
