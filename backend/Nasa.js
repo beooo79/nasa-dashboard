@@ -34,6 +34,15 @@ app.get("/search", (req, res) => {
   );
 });
 
+app.get("/graph-data", (req, res) => {
+  res.send({
+    treeData: [
+      { title: "Chicken", children: [{ title: "Egg" }] },
+      { title: "Fish", children: [{ title: "fingerline" }] },
+    ],
+  });
+});
+
 function httpRequest(params, postData) {
   return new Promise(function (resolve, reject) {
     var req = https.request(params, function (res) {
