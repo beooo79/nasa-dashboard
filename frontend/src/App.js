@@ -3,7 +3,6 @@ import "react-sortable-tree/style.css";
 import { React } from "react";
 import { Apod } from "./components/Apod";
 import { Search } from "./components/Search";
-import { GraphView } from "./components/GraphView";
 
 function App() {
   return (
@@ -19,9 +18,7 @@ function App() {
               <td>
                 <Apod />
               </td>
-              <td>
-                <GraphView />
-              </td>
+              <td></td>
             </tr>
           </tbody>
         </table>
