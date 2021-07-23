@@ -1,7 +1,7 @@
 `mvn clean compile`
 | System  | time |  |
 | ------- | --- | ---- |
-| MacBook | 100 | secs |
+| MacBook | 101 | secs |
 | i5 10600k Win10 | 62 | secs |
 | i7 7700k Linux Mint | ? | secs | 
 | M1 mac mini 16 GB RAM | ? | secs | 
@@ -10,16 +10,16 @@
 `mvn -T 1C clean compile`
 | System  | time |  |
 | ------- | --- | ---- |
-| MacBook | ? | secs | 
-| i5 10600k Win10 | ? | secs | 
+| MacBook | 70 | secs | 
+| i5 10600k Win10 | 18 | secs | 
 | i7 7700k Linux Mint | ? | secs | 
 | M1 mac mini 16 GB RAM | ? | secs | 
 
 
-`mvn -T 1C clean install -Dmaven.test.skip -DskipTests`
+`mvn -T 1C clean install -DskipTests`
 | System  | time |  |
 | ------- | --- | ---- |
 | MacBook | ? | secs | 
-| i5 10600k Win10 | ? | secs | 
+| i5 10600k Win10 | 55 | secs | 
 | i7 7700k Linux Mint | ? | secs | 
 | M1 mac mini 16 GB RAM | ? | secs | 
