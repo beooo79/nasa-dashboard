@@ -24,10 +24,11 @@
 | MacBook | ? | secs | 
 | i5 10600k Win10 | 55 | secs | 
 | i7 7700k Linux Mint | ? | secs | 
-| M1 mac mini 16 GB RAM | ? | secs | 
+| M1 mac mini 16 GB RAM | 47 | secs | 
 | i7-8565U Ubuntu | 90 | secs |
 
-`asi prettier maven goal`
+
+`mvn -T 1C (prettier maven goal)`
 | System  | time |  |
 | ------- | --- | ---- |
 | MacBook | ? | secs | 
