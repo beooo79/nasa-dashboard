@@ -1,6 +1,6 @@
 
 | System  | `mvn clean compile` | `mvn -T 1C clean compile` | `mvn -T 1C clean install -DskipTests` |  `mvn -T 1C (prettier maven goal)` |
-| ------- | --- | ---- |
+| ------- | ------------------- | ------------------------- | ------------------------------------- | ---------------------------------- |
 | MacBook | 101 | 70 | ? | ? | 
 | i5 10600k Win10 | 62 | 18 | 55 | ? | 
 | i7 7700k Linux Mint | 32 | 14.4 | 48 | 8 | 
